@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="https://wp.logos-download.com/wp-content/uploads/2019/06/Dota_2_Logo.png?dl">
+    <title>Heroes Dota 2</title>
+</head>
+<body>
+    <h1>Heroes de Dota 2</h1>
+    <div>
+        <form class ="hero-select" action="../bd-php/queryPHP.php" method="post">
+
+            <label for="dotaheros">Elige tu heroe</label>
+            <select name="dotaheros" id="dotaheros">
+                <option value="1">Juggernaut</option>
+                <option value="2">Anti-Mage</option>
+                <option value="3">Ursa</option>
+                <option value="4">Sven</option>
+                <option value="5">Slark</option>
+                <option value="6">Wraith King</option>
+                <option value="7">Void Spirit</option>
+                <option value="8">Shadow Fiend</option>
+                <option value="9">Muerta</option>
+                <option value="10">Storm Spirit</option>
+                <option value="11">Nature's Prophet</option>
+            </select>
+
+            <button type="submit"> Ver Heroe </button> 
+
+        </form>
+
+        <br><br>
+
+        <form class = "hero-stats" action="../bd-php/handler.php" method="post">
+            <label for="dotaheros">Elige tu heroe</label>
+            <select name="dotaheros" id="dotaheros">
+                <option value="1">Juggernaut</option>
+                <option value="2">Anti-Mage</option>
+                <option value="3">Ursa</option>
+                <option value="4">Sven</option>
+                <option value="5">Slark</option>
+                <option value="6">Wraith King</option>
+                <option value="7">Void Spirit</option>
+                <option value="8">Shadow Fiend</option>
+                <option value="9">Muerta</option>
+                <option value="10">Storm Spirit</option>
+                <option value="11">Nature's Prophet</option>
+            </select>
+
+            <br><br>
+
+            <label for="matches">Matches:</label>
+            <input type="text" id="matches" name="matches">
+
+            <br><br>
+
+            <label for="winrate">Winrate:</label>
+            <input type="text" id="winrate" name="winrate">
+            
+            <br><br>
+
+            <label for="kda">KDA:</label>
+            <input type="text" id="kda" name="kda">
+
+            <br><br>    
+
+            <label for="role">Role: </label>
+            <input type="text" id="role" name="role">
+
+            <br><br>
+
+            <label for="lane">Lane:</label>
+            <input type="text" id="lane" name="lane">
+
+            <br><br>
+
+            <button type="submit">Enviar a la BD</button>
+
+
+
+
+        </form>
+    </div>
+</body>
+</html>
